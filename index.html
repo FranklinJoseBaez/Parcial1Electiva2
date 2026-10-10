@@ -1,13 +1,118 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera página web</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        .tarjeta {
+            background: white;
+            max-width: 600px;
+            width: 100%;
+            padding: 40px 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .tarjeta h2 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .boton:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>¡Hola, mundo!</h1>
-    <h2>Práctica de Integración Continua</h2>
-    <p>Esta página se publica automáticamente con GitHub Actions y Surge.sh.</p>
+
+    <header>
+        <h1>¡Hola, mundo!</h1>
+        <p>Mi primera página web</p>
+    </header>
+
+    <main>
+        <section class="tarjeta">
+            <h2>Práctica de Integración Continua</h2>
+
+            <p>
+                Esta página web forma parte de una práctica académica
+                donde utilizamos GitHub Actions y Surge.sh para automatizar
+                su publicación en Internet.
+            </p>
+
+            <a class="boton" href="https://github.com/" target="_blank">
+                Visitar GitHub
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto académico | GitHub Actions + Surge.sh</p>
+    </footer>
+
 </body>
 </html>
